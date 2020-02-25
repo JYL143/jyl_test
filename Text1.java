@@ -1,9 +1,9 @@
 package J0518;
 import java.util.*;
 class Pet{
-	   private String name="ÎŞÃû";  //Ãû×Ö
-	   private int health=100;   //½¡¿µÖµ
-	   private int love=0;   //Ç×ÃÜ¶È
+	   private String name="æ— å";  //åå­—1
+	   private int health=100;   //å¥åº·å€¼
+	   private int love=0;   //äº²å¯†åº¦
 	
 	   public Pet(){
 		   this.health=95;
@@ -27,8 +27,8 @@ class Pet{
 	}
 
 	public void print(){
-		System.out.println("³èÎïµÄ×Ô°×£º");
-		System.out.println("ÎÒµÄÃû×Ö½Ğ"+this.getName()+",½¡¿µÖµÊÇ"+this.getHealth()+",ºÍÖ÷ÈËµÄÇ×ÃÜ¶ÈÎª"+this.getLove());
+		System.out.println("å® ç‰©çš„è‡ªç™½ï¼š");
+		System.out.println("æˆ‘çš„åå­—å«"+this.getName()+",å¥åº·å€¼æ˜¯"+this.getHealth()+",å’Œä¸»äººçš„äº²å¯†åº¦ä¸º"+this.getLove());
 	
 }
 
@@ -54,7 +54,7 @@ class Dog extends Pet{
 	}
    public void print(){
 	   super.print();
-	   System.out.println("ÎÒÊÇÒ»Ö»"+this.strain);
+	   System.out.println("æˆ‘æ˜¯ä¸€åª"+this.strain);
    }
 	
 }
@@ -75,7 +75,7 @@ class Penguin extends Pet{
 	}
 	 public void print(){
 			super.print();
-		   System.out.println("ÎÒµÄĞÔ±ğÊÇ"+this.sex);
+		   System.out.println("æˆ‘çš„æ€§åˆ«æ˜¯"+this.sex);
 	   }
 }
 public class Text1 {
@@ -85,9 +85,9 @@ public class Text1 {
 		
       Pet kt=new Pet();
       kt.print();
-      Dog kt1=new Dog( "±´±´","Ñ©ÄÉÈğ");
+      Dog kt1=new Dog( "è´è´","é›ªçº³ç‘");
       kt1.print();
-      Penguin kt2=new Penguin("Æó¶ì1","q×Ğ");
+      Penguin kt2=new Penguin("ä¼é¹…1","qä»”");
       kt2.print();
       
 	}
